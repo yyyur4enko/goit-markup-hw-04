@@ -90,13 +90,10 @@ body {
 }
 
 
-.menu-link:hover,
-.menu-link:focus {
-    color: var(--accent-color);
-}
 .menu-item:hover,
 .menu-item:focus{
     color: var(--accent-color);
+    cursor: pointer;
 }
 
 .current {
@@ -125,9 +122,11 @@ align-items: center;
 margin-left: auto;
 }
 
-
+.menu-item{
+    align-items: center;
+}
 .menu-item:not(:last-child) {
-    margin-right: 50px;
+    margin-right: 30px;
 } 
 .email {
     font-weight: 500;
@@ -235,18 +234,31 @@ margin-left: auto;
 .about-section {
  display: flex;
  align-items: center;
- justify-content: space-around;
- /* padding-bottom: 94px; */
+ justify-content:center; 
+
 }
-
-
-
-
 .about-section-two {
 margin-left: auto;
 margin-right: auto;
 margin-top: 0px;
 padding-top: 0px;
+}
+.about-section-cont{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    height: 120px;
+    width: 270px;
+    border-radius: 4px;
+    background-color: #F5F4FA;
+    margin-bottom: 30px;
+}
+
+.about-section-icon {
+    fill: solid #212121;
+} 
+.about-section-link:not(:last-child){
+    margin-right: 30px;
 }
 
 .list-title {
@@ -301,10 +313,13 @@ padding-top: 0px;
     background: #FFFFFF;
     border-radius: 0px 0px 4px 4px;
     flex-basis: calc((100%-30*3)\4);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 .employee-card-description{
     padding-top: 30px;
     padding-bottom: 30px;
+    
+    
 }
 .name {
     font-weight: 500;
@@ -325,7 +340,80 @@ padding-top: 0px;
     letter-spacing: 0.03em;
     color: var(--subcolor);
     flex-wrap: wrap;
+    margin-bottom: 16px;
 }
+
+.social-list {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.social-list-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: #ffffff;
+} 
+
+.social-list-link:hover,
+.social-list-link:focus {
+    background-color: #2196F3;
+}
+
+.social-list-icon {
+    fill: #AFB1B8;
+    
+}
+.social-list-link:hover .social-list-icon,
+.social-list-link:focus .social-list-icon {
+    fill: #FFFFFF
+}
+
+/* .div-section-clients {
+margin-top: 94px;
+background-color: #FFFFFF;
+} */
+.section-clients {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* width: 170px;
+    height: 92px; */
+}
+.section-clients-list:not(:last-child){
+    margin-right: 30px;
+}
+
+.section-clients-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+    width: 170px;
+    height: 92px;
+    
+}
+.section-clients-icon {
+    fill: #AFB1B8;
+}
+
+.section-clients-list:hover .section-clients-icon,
+.section-clients-list:focus .section-clients-icon{
+    fill: #2196F3;
+}
+.section-clients-list:hover,
+.section-clients-list:focus{
+    border: 1px solid #2196F3;
+        border-radius: 4px;
+}
+
+
 /* TEAM */
 /* FOOTER */
 .logo-footer {
@@ -352,6 +440,9 @@ padding-top: 0px;
 .footer-adress{
 display: inline-block;
 margin-top: 20px;
+}
+.div-footer {
+    display: flex;
 }
 
 .footer-email-tel-div{
@@ -383,6 +474,72 @@ margin-top: 9px;
     padding-bottom: 60px;
  
 }
+.footer-social-list {
+    display: flex;
+    justify-content:center;
+    align-content: center;
+    gap: 10px;
+}
+.footer-social {
+    font-family: var(--primary-font);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-bottom: 20px;
+}
+
+.footer-clients-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1);
+    cursor: pointer;
+}
+.footer-clients-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ 
+}
+
+.footer-clients-link:hover,
+.footer-clients-link:focus {
+    background-color: #2196F3;
+}
+
+.footer-list-icon {
+    fill: #FFFFFF
+}
+
+.footer-clients-link:hover .footer-list-icon,
+.footer-clients-link:focus .footer-list-icon {
+    fill: #FFFFFF
+}
+.footer-social-li {
+    margin-left: 70px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* FOOTER */
 /* PORTFOLIO SECTION */
 .header-portfolio {
