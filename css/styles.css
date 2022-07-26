@@ -76,8 +76,14 @@ body {
     line-height: 1.14;
     letter-spacing: 0.02em;
 
-    color: var(--main-color);
+    color: currentColor
 }
+
+.menu-link:hover,
+.menu-link:focus{
+    color: var(--accent-color);
+}
+
 .logo {
     margin-right: 93px;
     font-family: var(--secondary-font);
@@ -94,7 +100,22 @@ body {
 .menu-item:focus{
     color: var(--accent-color);
     cursor: pointer;
+    
 }
+.menu-contacts:hover,
+.menu-contacts:focus {
+    color: var(--accent-color);
+    cursor: pointer;
+}
+.menu-contacts {
+    align-items: center;
+    color: var(--subcolor);
+}
+
+.menu-contacts:not(:last-child) {
+    margin-right: 30px;
+}
+
 
 .current {
     color: var(--accent-color);
@@ -124,9 +145,10 @@ margin-left: auto;
 
 .menu-item{
     align-items: center;
+    color: var(--main-color)
 }
 .menu-item:not(:last-child) {
-    margin-right: 30px;
+    margin-right: 50px;
 } 
 .email {
     font-weight: 500;
@@ -134,7 +156,7 @@ margin-left: auto;
     font-size: 14px;
     line-height: 1.14px;
     letter-spacing: 0.02em;
-    color: var(--subcolor);
+    color: currentColor;
     margin-left:auto;
 }
 .email-icon {
@@ -162,7 +184,7 @@ margin-left: auto;
     line-height: 1.14;
     letter-spacing: 0.02em;
 
-    color: var(--subcolor);
+    color: currentColor;
 
 }
 .email:hover,
@@ -192,7 +214,7 @@ margin-left: auto;
         text-align: center;
         background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
         url(../images/index_sector/bg.jpg);
-        background-size:contain;
+        background-size:cover;
         background-position: 50% 50%;
         background-repeat: no-repeat;
         background-color: #C4C4C4;
@@ -391,7 +413,7 @@ background-color: #FFFFFF;
     margin-right: 30px;
 }
 
-.section-clients-list {
+.section-clients-link {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -406,12 +428,12 @@ background-color: #FFFFFF;
     fill: #AFB1B8;
 }
 
-.section-clients-list:hover .section-clients-icon,
-.section-clients-list:focus .section-clients-icon{
+.section-clients-link:hover .section-clients-icon,
+.section-clients-link:focus .section-clients-icon{
     fill: #2196F3;
 }
-.section-clients-list:hover,
-.section-clients-list:focus{
+.section-clients-link:hover,
+.section-clients-link:focus{
     border: 1px solid #2196F3;
         border-radius: 4px;
 }
@@ -494,7 +516,7 @@ margin-top: 9px;
     margin-bottom: 20px;
 }
 
-.footer-clients-link {
+.footer-clients-list {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -504,15 +526,9 @@ margin-top: 9px;
     background-color: rgba(255, 255, 255, 0.1);
     cursor: pointer;
 }
-.footer-clients-list {
-    display: flex;
-    justify-content: center;
-    align-items: center;
- 
-}
 
-.footer-clients-link:hover,
-.footer-clients-link:focus {
+.footer-clients-list:hover,
+.footer-clients-list:focus {
     background-color: #2196F3;
 }
 
@@ -520,8 +536,8 @@ margin-top: 9px;
     fill: #FFFFFF
 }
 
-.footer-clients-link:hover .footer-list-icon,
-.footer-clients-link:focus .footer-list-icon {
+.footer-clients-list:hover .footer-list-icon,
+.footer-clients-list:focus .footer-list-icon {
     fill: #FFFFFF
 }
 .footer-social-li {
