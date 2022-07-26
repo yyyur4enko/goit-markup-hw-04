@@ -115,8 +115,8 @@ body {
 .menu-contacts:not(:last-child) {
     margin-right: 30px;
 }
-.menu-contacts:hover .email-icon,
-.menu-contacts:focus .email-icon{
+.email:hover .email-icon,
+.email:focus .email-icon{
     color: var(--accent-color);
     cursor: pointer;
 }
@@ -162,6 +162,12 @@ margin-left: auto;
     color: currentColor;
     margin-left:auto;
 }
+
+.email:hover,
+.email:focus {
+    color: var(--accent-color);
+}
+
 .email-icon {
     display: inline-block;
     width: 16px;
